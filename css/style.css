@@ -219,7 +219,7 @@ align-items: center;
 .hidden-list{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     /* gap: 24px; */
     gap: 72px;
     
@@ -254,10 +254,11 @@ align-items: center;
 }
 .hero-title{
     font-family: var(--font-family);
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 120%;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
         letter-spacing: 0.02em;
+        text-align: center;
         color: var(--navy-blue);
         margin-bottom: 8px;
         /* text-align: center; */
@@ -895,5 +896,15 @@ background-color: #31d0aa;
         @media screen and (min-width:1158px) {
             .container {
                 width: 1128px;
+            }
+            .bg-special{
+                display: flex;
+            }
+            .hero-list{
+                width: calc((100% - 72px) / 4);
+            }
+            .hidden-list{
+                flex-wrap: nowrap;
+                gap: 24px;
             }
         }
