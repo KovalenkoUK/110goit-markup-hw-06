@@ -54,6 +54,7 @@ a{
 }
 
 .header-border{
+    display: flex;
     border-bottom: 1px solid #e7e9fc;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -63,7 +64,7 @@ a{
     
     display: flex;
     color: #404bbf;
-    /* width: 72px; */
+    
 }
 .logo{
     font-family: 'Raleway',sans-serif;
@@ -72,8 +73,8 @@ a{
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        margin-right: 76px;
-        padding: 24px 0;
+        /* margin-right: 76px; */
+        padding: 16px 0;
         position: relative;
         color: #404bbf;
         
@@ -96,10 +97,12 @@ a{
 }
 .header_link{
     display: flex;
+    
     align-items: center;
 }
 .header_list{
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 40px;  
     margin-right: 40px;
     position: relative;
@@ -145,7 +148,8 @@ a{
 }
 .address-link{
 align-items: center;
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 40px;
 }
 .header-contacts{
@@ -161,6 +165,81 @@ align-items: center;
 .header-contacts:hover, .header-contacts:focus{
     color: #404bbf;
 }
+.button-mobile{
+    background-color: transparent;
+    border: none;
+    padding: 16px 16px 16px 0;
+}
+.button-mobile-menu{
+    fill: currentColor;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.mob-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--dairy);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+        
+    }
+    .mob-header_list{
+        margin-top: 72px;
+        margin-left: 16px;
+        /* display: flex;
+        flex-wrap: nowrap;
+        justify-content: start; */
+        gap:40px;
+
+    }
+    .mob-list-link{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        color: var(--navy-blue);
+    }
+    .mob-menu-item:not(:last-child){
+        margin-bottom: 40px;
+     }
+    .mob-current{
+        color: var(--ocean);
+    }
+    .mob-address{
+        margin-top: 168px;
+    }
+    .mob-address-link{
+
+    }
+    .mob-contacts-list:not(:last-child){
+        margin-bottom: 24px;
+        
+    }
+    .mob-contacts-list{
+        margin-left: 16px;
+    }
+    .mob-contacts{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: var(--slate);
+    }
+
+    .mob-social-list{
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+        margin-left: 16px;
+    }
+
 
 .hero-logo{
     font-weight: 700;
@@ -176,7 +255,7 @@ align-items: center;
     background-color: #2e2f42;
     padding: 188px 0;
     text-align: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobile.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -184,9 +263,9 @@ align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
-@media screen (min-resolution:192dpi) {
+@media screen and (min-resolution:192dpi) {
     .hero-bg{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobilex2.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobile2x.jpg);
     }
 }
 .hero-button{
@@ -926,7 +1005,7 @@ background-color: #31d0aa;
             .hero-title{
                 text-align: left;
             }
-        @media screen (min-resolution:192dpi) {
+        @media screen and (min-resolution:192dpi) {
             .hero-bg {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tabletx2.jpg);
                             }
@@ -959,7 +1038,7 @@ background-color: #31d0aa;
             .hero-title-text{
                 font-weight: 400;
             }
-         @media screen (min-resolution:192dpi) {
+         @media screen and (min-resolution:192dpi) {
             .hero-bg {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-pcx2.jpg);
                             }
