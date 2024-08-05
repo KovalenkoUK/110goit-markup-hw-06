@@ -23,10 +23,9 @@ a{
 }
 .container {
     
-    width: 320px;
+    max-width: 320px;
     margin: 0 auto;
-    /* padding: 0 15px 0 15px; */
-    padding-left: 28px;
+    padding-left: 16px;
     padding-right: 16px;
 
 }
@@ -46,7 +45,7 @@ a{
 
 .section {
     padding: 188px 0;
-    /* width: 320px; */
+    width: 320px;
 }
 .flex {
     display: flex;
@@ -54,7 +53,7 @@ a{
 }
 
 .header-border{
-    display: flex;
+    
     border-bottom: 1px solid #e7e9fc;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -241,9 +240,10 @@ align-items: center;
 
 
 .hero-logo{
-    font-weight: 700;
-        font-size: 56px;
-        line-height: 107%;
+    font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
         letter-spacing: 0.02em;
         text-align: center;
         color: var(--white);
@@ -252,7 +252,7 @@ align-items: center;
 }
 .hero-bg{
     background-color: #2e2f42;
-    padding: 188px 0;
+    padding: 72px 0;
     text-align: center;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
@@ -281,7 +281,8 @@ align-items: center;
         min-width: 169px;
         height: 56px;
         border: none;
-        margin-left:59px;
+        margin-left:auto;
+        margin-right: auto;
         padding: 16px 32px;
         margin-top: 72px;
         transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
@@ -341,13 +342,13 @@ align-items: center;
 }
 .hero-title{
 font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-        margin-bottom: 8px;
-        /* text-align: center; */
+    margin-bottom: 8px;
+    text-align: center;
 }
 .hero-title-text{
 font-family: var(--font-family);
@@ -991,9 +992,15 @@ background-color: #31d0aa;
     }
         @media screen and (min-width:768px) {
             .container {
-                min-width: 768px;
-                padding: 0 16px;
-                margin: 0 0;
+                max-width: 768px;
+                padding: 16px 16px;
+                
+            }
+            .section{
+                width: 768px;
+            }
+            .header-border{
+                display: block;
             }
             .button-mobile{
                 display: none;
@@ -1011,12 +1018,13 @@ background-color: #31d0aa;
             .address-link{
                 flex-direction: column;
                 gap: 16px;
-                padding: 16px;
+                padding: 16px 0;
+                
                 
                 
             }
             .header-contacts{
-                /* padding: 16px 12px; */
+                font-size: 12px;
                 padding: 0 0;
             }
             .contacts-list{
@@ -1025,6 +1033,11 @@ background-color: #31d0aa;
 
             .hero-bg{
                 background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tablet.jpg);
+                padding: 112px 0;
+            }
+            .hero-logo{
+                font-size: 56px;
+                line-height: 107%;  
             }
             .hero-button{
                 margin: auto;
@@ -1088,15 +1101,32 @@ background-color: #31d0aa;
     
         @media screen and (min-width:1158px) {
             .container {
+                max-width: 1440px;
+                padding: 0 15px;
+            }
+            .section{
                 width: 1158px;
+            }
+            .header-contacts{
+                font-size: 16px;
             }
             .address-link{
                 flex-direction: row;
                 padding: 24px 0;
+                gap: 40px;
+            }
+            .hero-logo{
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 107%;
             }
             .hero-bg{
                 background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
                 max-width: 1440px;
+                padding: 188px 0;
+                margin-left: 0;
+                margin-right: 0;
+                max-width:100% ;
             }
             .bg-special{
                 display: flex;
