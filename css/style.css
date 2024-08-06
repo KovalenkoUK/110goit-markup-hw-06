@@ -178,6 +178,7 @@ align-items: center;
         left: 0;
         width: 100%;
         height: 100%;
+        padding: 72px 16px 40px;
         background: var(--dairy);
         z-index: 1;
         display: flex;
@@ -187,11 +188,7 @@ align-items: center;
         
     }
     .mob-header_list{
-        margin-top: 72px;
-        margin-left: 16px;
-        /* display: flex;
-        flex-wrap: nowrap;
-        justify-content: start; */
+        
         gap:40px;
 
     }
@@ -210,7 +207,7 @@ align-items: center;
         color: var(--ocean);
     }
     .mob-address{
-        margin-top: 168px;
+        /* margin-top: 168px; */
     }
     .mob-address-link{
 
@@ -220,7 +217,7 @@ align-items: center;
         
     }
     .mob-contacts-list{
-        margin-left: 16px;
+        
     }
     .mob-contacts{
         font-family: var(--font-family);
@@ -234,8 +231,8 @@ align-items: center;
     .mob-social-list{
         display: flex;
         gap: 40px;
-        margin-bottom: 40px;
-        margin-left: 16px;
+        
+        
     }
 
 
@@ -561,8 +558,8 @@ font-family: var(--font-family);
 }
 .modal{
     
-    width: 98%;
-    height: 98%;
+    width: 288px;
+    height: 623px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: var(--dairy);
     position: absolute;
@@ -851,9 +848,10 @@ input[type="checkbox"]:checked+label .span-checkbox{
         gap: 72px;
     align-items: baseline;
     text-align: center ;
+    justify-content: center;
 }
 .social-footer{
-    width: 288px;
+    /* width: 288px; */
     
 }
 .footer-social-link{
@@ -900,7 +898,7 @@ background-color: #31d0aa;
 }
 
 .social-footer-mail {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -934,7 +932,7 @@ background-color: #31d0aa;
 
 
 .social-follow {
-    margin-left: auto;
+    
     display: flex;
         flex-direction: column;
         gap: 16px;
@@ -1057,14 +1055,14 @@ background-color: #31d0aa;
             }
             .feauter-lest{
                 gap: 64px 24px;
-                margin-left:108px;
+                
             }
             .portfolio-item{
                 gap: 72px 24px;
-                margin-left: 16px;
+                
             }
             .portfolio-list{
-                width: calc((100% - 48px) / 2);
+                width: calc((100% - 24px) / 2);
             }
             .social-footer{
                 margin-right: 0;
@@ -1075,7 +1073,7 @@ background-color: #31d0aa;
                
             }
             .flex-footer{
-                width: 528px;
+                
                 gap: 72px 24px;
                 padding: 0 108px;
                 text-align: left; 
@@ -1093,6 +1091,13 @@ background-color: #31d0aa;
                 gap: 24px;
                 flex-direction: row;
             }
+            .modal{
+                width: 408px;
+                height: 584px;
+            }
+            .mob-menu {
+                display: none;
+            }
         @media screen and (min-resolution:192dpi) {
             .hero-bg {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tablet2x.jpg);
@@ -1102,7 +1107,7 @@ background-color: #31d0aa;
     
         @media screen and (min-width:1158px) {
             .container {
-                max-width: 1440px;
+                max-width: 1158px;
                 padding: 0 15px;
             }
             .section{
@@ -1159,21 +1164,28 @@ background-color: #31d0aa;
             }
             .portfolio-item{
                 gap: 24px;
-                row-gap: 48;
+                row-gap: 48px;
             }
             .flex-footer{
                 flex-wrap: nowrap;
+                gap: 0;
             }
             .social-footer{
+                margin-right: 120px;
+            }
+            .follow{
                 margin-right: auto;
             }
             .social-follow{
-                margin-left: auto;
+                
             }
             .modal{
             border-radius: 4px;
                 width: 408px;
                 height: 584px;
+            }
+            .mob-menu{
+                display: none;
             }
          @media screen and (min-resolution:192dpi) {
             .hero-bg {
