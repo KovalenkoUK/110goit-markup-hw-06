@@ -370,6 +370,7 @@ font-family: var(--font-family);
     align-items: center;
     flex-wrap: wrap;
     gap: 72px;
+    justify-content: center;
     /* margin-right: 24px;
     gap: 24px; */
 }
