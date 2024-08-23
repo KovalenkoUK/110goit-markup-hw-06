@@ -9,6 +9,8 @@ body{
 
 img{
     display: block;
+    width: 100%;
+    height: auto;
 }
 h1,h2,h3,p{
     margin: 0;
@@ -170,7 +172,7 @@ align-items: center;
 }
 .button-mobile-menu{
     fill: currentColor;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    
 }
 .mob-menu{
         position: fixed;
@@ -245,7 +247,7 @@ align-items: center;
         text-align: center;
         color: var(--white);
         margin: 0 auto;
-        max-width: 496px;
+        max-width: 216px;
 }
 .hero-bg{
     background-color: #2e2f42;
@@ -339,13 +341,13 @@ align-items: center;
 }
 .hero-title{
 font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 111%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     margin-bottom: 8px;
-    text-align: center;
+    text-align: start;
 }
 .hero-title-text{
 font-family: var(--font-family);
@@ -992,7 +994,7 @@ background-color: #31d0aa;
         @media screen and (min-width:768px) {
             .container {
                 max-width: 768px;
-                padding: 16px 16px;
+                /* padding: 16px 16px; */
                 
             }
             .section{
@@ -1014,10 +1016,13 @@ background-color: #31d0aa;
                 margin-left: auto;
                 
             }
+            .header-menu{
+                align-items: center;
+            }
             .address-link{
                 flex-direction: column;
                 gap: 16px;
-                padding: 16px 0;
+                
                 
                 
                 
@@ -1035,6 +1040,7 @@ background-color: #31d0aa;
                 padding: 112px 0;
             }
             .hero-logo{
+                max-width: 496px;
                 font-size: 56px;
                 line-height: 107%;  
             }
@@ -1125,6 +1131,7 @@ background-color: #31d0aa;
                     font-weight: 700;
                     font-size: 56px;
                     line-height: 107%;
+                    max-width: 496px;
             }
             .hero-bg{
                 background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
@@ -1132,7 +1139,7 @@ background-color: #31d0aa;
                 padding: 188px 0;
                 margin-left: 0;
                 margin-right: 0;
-                max-width:100% ;
+                /* max-width:100% ; */
             }
             .bg-special{
                 display: flex;
